@@ -1,0 +1,10 @@
+{
+  "target_formula": "SrFe12O19",
+  "precursor_formulas": ["Fe2O3", "SrCO3"],
+  "source_id": "lee2025_impurities",
+  "chemistry_family": "oxide",
+  "process_actions": ["Mixing", "HeatingOperation", "Grinding", "HeatingOperation"],
+  "temperature_C": 1000,
+  "duration_h": 8,
+  "atmosphere": "air"
+}
