@@ -1,0 +1,325 @@
+from __future__ import annotations
+
+import hashlib
+import json
+import shutil
+import zipfile
+from pathlib import Path
+
+from docx import Document
+from docx.oxml import OxmlElement
+from docx.shared import Inches, Pt
+from docx.text.paragraph import Paragraph
+
+
+ROOT = Path(__file__).resolve().parents[1]
+BASE = Path(r"D:\Downloads\材料agent\PATH-Mat_Evidence_Strengthening_V242\submission_final")
+OUT = ROOT / "submission_final"
+OUT.mkdir(parents=True, exist_ok=True)
+
+MAIN = "PATH_Mat_Manuscript_Submission_V244"
+SI = "PATH_Mat_Supporting_Information_Submission_V244"
+
+ABSTRACT = (
+    "Machine-learning models trained on synthesis literature capture both chemistry and reporting practice. We separate these signals using "
+    "leakage-controlled splits and structured experimental data. In 70,636 routes, action-list length explained nearly all of the primary "
+    "process-feature gain, while generic stored order added no resolved increment. A frozen model ranked all four impurity-related temperature "
+    "contrasts correctly for two unseen oxy-selenides. Source-adapted models ranked physical outcomes within held-out formulations and run groups. "
+    "Across controlled MOF, oxide, nanoparticle and catalyst protocols, changing reagent order altered phase or size outcomes, with the preferred "
+    "order depending on chemistry and endpoint. In an independent XRD-labelled Fe₂(ZnCo)O₄ cohort, adding precipitation order improved out-of-fold "
+    "ranking point estimates beyond four numerical conditions (average precision, 0.362 to 0.416), although ranking uncertainty included no gain. "
+    "These results establish process order as a context-dependent synthesis variable, not a universal sequence rule."
+)
+
+RESULTS_HEADING = "An independent XRD spinel cohort adds a process-order prediction test"
+RESULTS_TEXT = (
+    "We tested the incremental value of recorded precipitation order in the public Fe₂(ZnCo)O₄ high-throughput XRD dataset [81]. Among 70 "
+    "model-ready experiments, 17 were labelled single phase. A fixed logistic model using metal concentration, metal amount, K₂CO₃ concentration "
+    "and addition rate achieved leave-one-out average precision (AP) 0.362 and AUROC 0.726; adding the normal-versus-reverse precipitation-order "
+    "indicator raised the point estimates to AP 0.416 and AUROC 0.747 and reduced Brier score from 0.176 to 0.170. The direction persisted when "
+    "entire four-character destination-ID prefixes were held out (AP 0.298 to 0.319; AUROC 0.643 to 0.659; Brier 0.212 to 0.200). However, paired "
+    "bootstrap intervals for the ranking gains included zero, and the seven-prefix bootstrap was correspondingly wide. The raw single-phase rates "
+    "were 11/32 for normal addition and 6/38 for reverse addition (risk difference, reverse minus normal, −18.6 percentage points; Newcombe 95% CI, "
+    "−37.8 to +1.6; Fisher exact P = 0.095). No exact numerical-condition stratum contained both order arms, and the paper does not document random "
+    "assignment. This independent source therefore adds a positive, cross-validated order-feature signal on an XRD-labelled spinel endpoint; it does "
+    "not provide a precise incremental ranking estimate or identify a causal order effect (Supplementary Table S109)."
+)
+
+DISCUSSION = (
+    "Taken together, the study establishes three distinct results. First, the frozen PATH-Mat model transferred a temperature-associated impurity "
+    "ranking to two target formulas and one publication absent from training, correctly ordering all four available within-target contrasts; larger "
+    "external tests also reveal where this transfer fails. Second, source-adapted models using measured conditions ranked outcomes within fixed "
+    "formulations across held-out metals and experimental runs, demonstrating process signal beyond publication length in structured experimental "
+    "settings. Third, sequence is an experimentally actionable variable across several synthesis classes: matched or factorial interventions shifted "
+    "phase, yield, particle-size or ageing outcomes in MOF, oxide, nanoparticle and supported-catalyst workflows. An independent Fe₂(ZnCo)O₄ XRD "
+    "cohort added a separate predictive test: precipitation-order augmentation improved AP, AUROC and Brier point estimates under both leave-one-out "
+    "and destination-prefix holdout, although uncertainty around the ranking gains included zero. Together with the held-out ZIF-8 campaign rule and "
+    "the complete ZIF-62 permutation experiment, these results support a general but context-dependent role for route order; the preferred direction "
+    "depends on chemistry and endpoint. They do not imply a universal sequence rule. PATH-Mat itself does not encode reagent identity at each sequence "
+    "position, so these intervention results establish the scientific value of order-aware optimization in tested systems, not a causal policy "
+    "generated by the current PATH-Mat model."
+)
+
+METHODS_HEADING = "Independent mixed-spinel order-feature evaluation"
+METHODS_TEXT = (
+    "We downloaded the public K2CO3-all.csv file from the GREMLIN repository at commit 4e4a30b4d12b0e3f55f0990bb2edaaff0c34bfe6 [81]. "
+    "The analysis included all 70 records with a source-reported binary single-phase XRD label (17 positive). The fixed baseline predictors were "
+    "metal_initial_conc, metal_mmol, K2CO3_initial_conc and rate; the augmented model added precipitation_order (0, precipitant into metal solution; "
+    "1, metal solution into precipitant). Both models used StandardScaler and LogisticRegression(C=1, solver=liblinear), with preprocessing fitted "
+    "within each training fold and no hyperparameter or threshold search. We generated leave-one-out probabilities and a second leave-one-"
+    "destination-prefix-out set of probabilities, where the first four characters of the public destination identifier defined the held-out group; the source "
+    "does not document a physical meaning for this identifier prefix. AP, AUROC and Brier score were computed from pooled out-of-fold predictions. "
+    "Paired bootstrap intervals resampled outcomes conditional on the leave-one-out predictions; the grouped sensitivity additionally resampled "
+    "the seven identifier-prefix groups, stratified by whether a group contained any positive outcome. These intervals condition on the fitted "
+    "out-of-fold predictions and do not include full model-refit or source-sampling uncertainty. We also report the unadjusted 2×2 order-by-outcome "
+    "contrast with Wilson arm intervals, a Newcombe risk-difference interval and a two-sided Fisher exact test. Exact common support was assessed by "
+    "counting strata that matched all four baseline predictors and contained both order arms. Because there was no such stratum and no documented "
+    "randomization, the marginal arm contrast is descriptive and is not interpreted causally."
+)
+
+SI_CAPTION = "Supplementary Table S109 | Independent XRD-labelled Fe₂(ZnCo)O₄ precipitation-order challenge."
+SI_SECTION = "15D. Independent XRD-labelled spinel order-feature challenge"
+SI_INTRO = (
+    "This analysis asks whether an explicit order feature adds predictive information beyond numerical process conditions in a separate, public "
+    "high-throughput spinel dataset. The endpoint is the source-reported single-phase classification assigned from high-throughput XRD. We used a "
+    "fixed logistic model and feature set specified in the analysis script, without hyperparameter search; this is a within-dataset refit, not frozen "
+    "PATH-Mat transfer."
+)
+SI_ROWS = [
+    ["Evaluation", "Predictors", "n / positive", "AP", "AUROC", "Brier"],
+    ["Leave-one-out", "Four numeric conditions", "70 / 17", "0.3623", "0.7259", "0.1759"],
+    ["Leave-one-out", "Four numeric conditions + precipitation order", "70 / 17", "0.4160", "0.7469", "0.1695"],
+    ["LOO paired OOF difference (order model − baseline)", "ΔAP +0.0537 (conditional 95% CI −0.0251 to +0.1718); ΔAUROC +0.0211 (−0.0566 to +0.0910); ΔBrier −0.0064 (−0.0230 to +0.0099)", "1,000 stratified draws", "—", "—", "—"],
+    ["Leave destination-prefix group out", "Four numeric conditions", "70 / 17; 7 groups", "0.2980", "0.6426", "0.2118"],
+    ["Leave destination-prefix group out", "Four numeric conditions + precipitation order", "70 / 17; 7 groups", "0.3187", "0.6593", "0.1998"],
+    ["Grouped paired OOF difference", "ΔAP +0.0207 (conditional 95% CI −0.0512 to +0.1219); ΔAUROC +0.0166 (−0.0705 to +0.1219); ΔBrier −0.0120 (−0.0268 to −0.0008)", "1,000 group draws", "—", "—", "—"],
+    ["Observed order-arm labels", "Normal: 11/32 single phase (34.4%); reverse: 6/38 (15.8%)", "70 / 17", "RD reverse−normal −18.6 pp (Newcombe 95% CI −37.8 to +1.6); OR 0.358; Fisher P=0.095", "—", "—"],
+]
+SI_NOTE = (
+    "The ranking gains were positive point estimates in both validation designs, but the conditional AP and AUROC intervals crossed zero. The grouped "
+    "Brier difference favored the order-augmented model, although its bootstrap resampled only seven public identifier-prefix groups and is conditional "
+    "on the fitted predictions. The raw order-arm contrast was also imprecise. No exact stratum formed by metal_initial_conc, metal_mmol, "
+    "K2CO3_initial_conc and rate contained both order arms, so the outcome contrast is confounded by condition-space support. These findings support "
+    "an independent, order-associated predictive signal in this material system; they do not establish a population-wide effect, a causal treatment "
+    "contrast, universal order direction, or a PATH-Mat-generated policy. The source paper reports 79 total samples and uses 70 in its model analysis; "
+    "the present analysis uses the 70 complete, labelled rows in the public model-ready CSV [81]. The CSV SHA-256 is "
+    "46ecb303d0163fb54d1a2260119e4c19850d8dea18e4ad20b6ef2d3c98e00807; the corresponding public repository commit is "
+    "4e4a30b4d12b0e3f55f0990bb2edaaff0c34bfe6."
+)
+
+REFERENCE_81 = (
+    "81. Liu, Y. et al. Kernel learning assisted synthesis condition exploration for ternary spinel. Communications Materials 6, 145 (2025). "
+    "https://doi.org/10.1038/s43246-025-00867-3. Data and code: https://github.com/AccelerationConsortium/gremlin."
+)
+REFERENCE_80 = (
+    "80. Pan, E. et al. ZeoSyn: A Comprehensive Zeolite Synthesis Dataset Enabling Machine-Learning Rationalization of Hydrothermal Parameters. "
+    "ACS Central Science 10, 729–740 (2024). https://doi.org/10.1021/acscentsci.3c01615"
+)
+
+
+def media_hashes(path: Path) -> dict[str, str]:
+    with zipfile.ZipFile(path) as zf:
+        return {n: hashlib.sha256(zf.read(n)).hexdigest() for n in zf.namelist() if n.startswith("word/media/")}
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def insert_paragraph_before(anchor: Paragraph, text: str, style: str = "Normal", bold: bool = False) -> Paragraph:
+    p_xml = OxmlElement("w:p")
+    anchor._p.addprevious(p_xml)
+    p = Paragraph(p_xml, anchor._parent)
+    p.style = style
+    run = p.add_run(text)
+    run.bold = bold
+    return p
+
+
+def insert_paragraph_after(anchor: Paragraph, text: str, style: str = "Normal") -> Paragraph:
+    p_xml = OxmlElement("w:p")
+    anchor._p.addnext(p_xml)
+    p = Paragraph(p_xml, anchor._parent)
+    p.style = style
+    p.add_run(text)
+    return p
+
+
+def set_text(p: Paragraph, text: str) -> None:
+    p.clear()
+    p.add_run(text)
+
+
+def markdown_update() -> None:
+    main_path = OUT / f"{MAIN}.md"
+    si_path = OUT / f"{SI}.md"
+    main = main_path.read_text(encoding="utf-8")
+    si = si_path.read_text(encoding="utf-8")
+
+    # The V242 abstract is replaced with a concise, evidence-scaled version.
+    first, sep, tail = main.partition("## Abstract\n\n")
+    if not sep:
+        raise RuntimeError("Abstract heading missing")
+    abstract, sep2, rest = tail.partition("\n## Main")
+    if not sep2:
+        raise RuntimeError("Main heading missing after abstract")
+    main = first + sep + ABSTRACT + sep2 + rest
+
+    result_anchor = "### Measured process chronology predicts held-out-date performance in a separate perovskite workflow"
+    if main.count(result_anchor) != 1 or "Independent XRD spinel cohort adds a process-order prediction test" in main:
+        raise RuntimeError("Unexpected result-section structure")
+    main = main.replace(result_anchor, f"### {RESULTS_HEADING}\n\n{RESULTS_TEXT}\n\n{result_anchor}", 1)
+
+    old_disc_start = "Taken together, the study establishes three distinct results."
+    disc_i = main.find(old_disc_start)
+    if disc_i < 0:
+        raise RuntimeError("Discussion synthesis paragraph missing")
+    disc_end = main.find("\n\n", disc_i)
+    if disc_end < 0:
+        raise RuntimeError("Could not delimit discussion paragraph")
+    main = main[:disc_i] + DISCUSSION + main[disc_end:]
+
+    methods_anchor = "### Within-DOI structure audit"
+    if main.count(methods_anchor) != 1:
+        raise RuntimeError("Methods insertion anchor missing")
+    main = main.replace(methods_anchor, f"### {METHODS_HEADING}\n\n{METHODS_TEXT}\n\n{methods_anchor}", 1)
+
+    main = main.replace("Supporting Tables S1–S108", "Supporting Tables S1–S109")
+    main = main.replace("references 1–3, 9, 49, 51, 53, 55, 56, 58, 59, 61, 63 and 65–80.", "references 1–3, 9, 49, 51, 53, 55, 56, 58, 59, 61, 63 and 65–81, including the public GREMLIN spinel cohort.")
+    main = main.replace("V242 the checksum-bound claim-specific proof audit and recomputation script.", "V242 the checksum-bound claim-specific proof audit and recomputation script; V244 adds the independent spinel order-feature challenge and its grouped-holdout analysis.")
+    main = main.replace("A public accession for the derived PATH-Mat analysis package has not yet been assigned.", "V244 adds the public GREMLIN spinel order-feature evaluation in Supporting Table S109, with the source checksum and reproducible predictions in the analysis workspace. A public accession for the derived PATH-Mat analysis package has not yet been assigned.", 1)
+    main = main.replace("and V242 adds the claim-specific frozen-transfer, sequence-intervention and policy-transport audit; scripts and checksum-bound outputs are included.", "and V242 adds the claim-specific frozen-transfer, sequence-intervention and policy-transport audit; V244 adds the independent GREMLIN spinel order-feature challenge and destination-prefix holdout analysis; scripts and checksum-bound outputs are included.")
+    reference_anchor = "80. Pan, E. et al. ZeoSyn: A Comprehensive Zeolite Synthesis Dataset Enabling Machine-Learning Rationalization of Hydrothermal Parameters. ACS Central Science 10, 729–740 (2024). https://doi.org/10.1021/acscentsci.3c01615"
+    if main.count(reference_anchor) != 1:
+        raise RuntimeError("Manuscript reference 80 anchor missing")
+    main = main.replace(reference_anchor, reference_anchor + "\n\n" + REFERENCE_81, 1)
+    main_path.write_text(main, encoding="utf-8")
+
+    if "Supplementary Table S109 |" in si:
+        raise RuntimeError("S109 already exists")
+    si = si.replace("   15C. Independent rare-earth MOF PXRD campaign\n16. Reproducibility", "   15C. Independent rare-earth MOF PXRD campaign\n   15D. Independent XRD-labelled spinel order-feature challenge\n16. Reproducibility", 1)
+    si = si.replace("## 16. Reproducibility", f"## {SI_SECTION}\n\n{SI_CAPTION}\n\n{SI_INTRO}\n\n| " + " | ".join(SI_ROWS[0]) + " |\n|" + "|".join(["---"] * len(SI_ROWS[0])) + "|\n" + "\n".join("| " + " | ".join(row) + " |" for row in SI_ROWS[1:]) + f"\n\n{SI_NOTE}\n\n## 16. Reproducibility", 1)
+    si = si.replace("The V242 claim-specific audit is reproduced by", "The independent spinel-order challenge is reproduced by `analysis/run_v244_gremlin_order_challenge.py`; its fixed-model predictions, source hash and conditional uncertainty checks are in `results/V244_GREMLIN_ORDER_CHALLENGE_AUDIT.json` and `results/V244_GREMLIN_LOO_PREDICTIONS.csv`. The V242 claim-specific audit is reproduced by", 1)
+    si = si.replace("## References\n\n1. Kononova", "## References\n\n1. Kononova", 1)
+    si_ref_anchor = "80. Pan, E. et al. ZeoSyn: A Comprehensive Zeolite Synthesis Dataset Enabling Machine-Learning Rationalization of Hydrothermal Parameters. ACS Central Science 10, 729–740 (2024). https://doi.org/10.1021/acscentsci.3c01615"
+    if si.count(si_ref_anchor) != 1:
+        raise RuntimeError("SI reference 80 anchor missing")
+    si = si.replace(si_ref_anchor, si_ref_anchor + "\n" + REFERENCE_81, 1)
+    si_path.write_text(si, encoding="utf-8")
+
+
+def docx_update() -> dict[str, dict[str, str]]:
+    main_base = BASE / "PATH_Mat_Manuscript_Submission_V242.docx"
+    si_base = BASE / "PATH_Mat_Supporting_Information_Submission_V242.docx"
+    main_out = OUT / f"{MAIN}.docx"
+    si_out = OUT / f"{SI}.docx"
+    shutil.copy2(main_base, main_out)
+    shutil.copy2(si_base, si_out)
+
+    main = Document(main_out)
+    abstract_anchor = next(p for p in main.paragraphs if p.text.startswith("Machine-learning models trained on synthesis literature"))
+    set_text(abstract_anchor, ABSTRACT)
+    result_anchor = next(p for p in main.paragraphs if p.text.startswith("Measured process chronology predicts held-out-date performance"))
+    insert_paragraph_before(result_anchor, RESULTS_HEADING, "Heading 2")
+    insert_paragraph_before(result_anchor, RESULTS_TEXT)
+    method_anchor = next(p for p in main.paragraphs if p.text.strip() == "Within-DOI structure audit")
+    insert_paragraph_before(method_anchor, METHODS_HEADING, "Heading 2")
+    insert_paragraph_before(method_anchor, METHODS_TEXT)
+    discussion_anchor = next(p for p in main.paragraphs if p.text.startswith("Taken together, the study establishes three distinct results."))
+    set_text(discussion_anchor, DISCUSSION)
+    data_anchor = next(p for p in main.paragraphs if p.text.startswith("The source datasets and external intervention records are identified"))
+    new_data = data_anchor.text.replace("references 1–3, 9, 49, 51, 53, 55, 56, 58, 59, 61, 63 and 65–80.", "references 1–3, 9, 49, 51, 53, 55, 56, 58, 59, 61, 63 and 65–81, including the public GREMLIN spinel cohort.").replace("Supporting Tables S1–S108", "Supporting Tables S1–S109")
+    new_data = new_data.replace("A public accession for the derived PATH-Mat analysis package has not yet been assigned.", "V244 adds the public GREMLIN spinel order-feature evaluation in Supporting Table S109, with the source checksum and reproducible predictions in the analysis workspace. A public accession for the derived PATH-Mat analysis package has not yet been assigned.")
+    set_text(data_anchor, new_data)
+    code_anchor = next(p for p in main.paragraphs if p.text.startswith("The analysis bundle contains frozen primary-test predictions"))
+    set_text(code_anchor, code_anchor.text.replace("; scripts and checksum-bound outputs are included.", "; V244 adds analysis/run_v244_gremlin_order_challenge.py and the source-hash-pinned GREMLIN XRD order-feature evaluation; scripts and checksum-bound outputs are included."))
+    ref80 = next(p for p in main.paragraphs if p.text.startswith("80. Pan, E. et al. ZeoSyn:"))
+    insert_paragraph_after(ref80, REFERENCE_81)
+    main.save(main_out)
+
+    si = Document(si_out)
+    heading = next(p for p in si.paragraphs if p.text.strip() == "16. Reproducibility")
+    # Insert content in order immediately before section 16.
+    insert_paragraph_before(heading, SI_SECTION, "Heading 2")
+    cap = insert_paragraph_before(heading, SI_CAPTION, "Normal", bold=True)
+    intro = insert_paragraph_before(heading, SI_INTRO)
+    table = si.add_table(rows=1, cols=len(SI_ROWS[0]))
+    table.style = "Table Grid"
+    heading._p.addprevious(table._tbl)
+    for j, item in enumerate(SI_ROWS[0]):
+        cell = table.rows[0].cells[j]
+        cell.text = item
+        for run in cell.paragraphs[0].runs:
+            run.bold = True
+            run.font.size = Pt(8)
+    for row in SI_ROWS[1:]:
+        cells = table.add_row().cells
+        for j, item in enumerate(row):
+            cells[j].text = item
+            for para in cells[j].paragraphs:
+                for run in para.runs:
+                    run.font.size = Pt(7.5)
+    note = insert_paragraph_before(heading, SI_NOTE)
+    for p in (cap, intro, note):
+        for run in p.runs:
+            run.font.size = Pt(9)
+    repro = next(p for p in si.paragraphs if p.text.startswith("The V242 claim-specific audit is reproduced by"))
+    set_text(repro, "The independent spinel-order challenge is reproduced by analysis/run_v244_gremlin_order_challenge.py; its fixed-model predictions, source hash and conditional uncertainty checks are in results/V244_GREMLIN_ORDER_CHALLENGE_AUDIT.json and results/V244_GREMLIN_LOO_PREDICTIONS.csv. " + repro.text)
+    si_ref79 = next(p for p in si.paragraphs if p.text.startswith("79. Gaidimas, M. A., Kim, G.-H."))
+    si_ref80 = insert_paragraph_after(si_ref79, REFERENCE_80)
+    insert_paragraph_after(si_ref80, REFERENCE_81)
+    toc_anchor = next(p for p in si.paragraphs if p.text.strip() == "15C. Independent rare-earth MOF PXRD campaign")
+    insert_paragraph_after(toc_anchor, "15D. Independent XRD-labelled spinel order-feature challenge", toc_anchor.style.name)
+    si.save(si_out)
+
+    return {
+        "source_main_media": media_hashes(main_base),
+        "output_main_media": media_hashes(main_out),
+        "source_si_media": media_hashes(si_base),
+        "output_si_media": media_hashes(si_out),
+    }
+
+
+def main() -> None:
+    for name in (f"{MAIN}.md", f"{MAIN}.docx", f"{SI}.md", f"{SI}.docx"):
+        src = BASE / name.replace("V244", "V242")
+        if name.endswith(".md"):
+            shutil.copy2(src, OUT / name)
+    markdown_update()
+    image_hashes = docx_update()
+    if image_hashes["source_main_media"] != image_hashes["output_main_media"]:
+        raise RuntimeError("Main manuscript embedded media changed")
+    if image_hashes["source_si_media"] != image_hashes["output_si_media"]:
+        raise RuntimeError("SI embedded media changed")
+    included_files = list(OUT.iterdir()) + [
+        ROOT / "analysis" / "run_v244_gremlin_order_challenge.py",
+        ROOT / "analysis" / "build_v244_order_strengthening.py",
+        ROOT / "inputs" / "gremlin" / "data" / "K2CO3-all.csv",
+        ROOT / "results" / "V244_GREMLIN_ORDER_CHALLENGE_AUDIT.json",
+        ROOT / "results" / "V244_GREMLIN_LOO_PREDICTIONS.csv",
+        ROOT / "reports" / "V244_顺序效应结论与证据边界.md",
+    ]
+    manifest = {
+        "version": "V244",
+        "based_on": "V242 submission package",
+        "scope": "Add an independent public mixed-spinel order-feature evaluation; preserve all existing figures and other manuscript content except targeted abstract/results/methods/discussion/data references.",
+        "files": {str(p.relative_to(ROOT)): sha256(p) for p in included_files if p.is_file()},
+        "embedded_media_hashes_unchanged": True,
+        "main_media_count": len(image_hashes["output_main_media"]),
+        "si_media_count": len(image_hashes["output_si_media"]),
+        "new_result": {
+            "loo_ap": {"baseline": 0.3622822293508364, "order_added": 0.41597348979494775, "conditional_95ci_delta": [-0.025125307458836194, 0.17176583895129688]},
+            "destination_prefix_heldout_ap": {"baseline": 0.297957445580008, "order_added": 0.318681630135462, "conditional_95ci_delta": [-0.05118638923262342, 0.12185851813121862]},
+            "destination_prefix_heldout_auroc": {"baseline": 0.6426193118756937, "order_added": 0.6592674805771366, "conditional_95ci_delta": [-0.07045454545454544, 0.12187500000000007]},
+            "destination_prefix_heldout_brier_difference": {"point": -0.01195751276000992, "conditional_95ci": [-0.026750089764251743, -0.0007629420357765364]},
+            "raw_order_contrast": {"rd_reverse_minus_normal": -0.18585526315789475, "newcombe_95ci": [-0.3780584785927922, 0.016374312747353653], "fisher_p_two_sided": 0.09528726942533758},
+            "causal_estimand_identified": False,
+            "universal_order_rule_supported": False,
+        },
+    }
+    (ROOT / "results" / "V244_SUBMISSION_BUILD_MANIFEST.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(json.dumps({"output": str(OUT), "files": manifest["files"], "embedded_media_hashes_unchanged": True}, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

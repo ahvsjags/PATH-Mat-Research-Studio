@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pathmat.local/schemas/vcr-critique-v1.json",
+  "title": "PATH-Mat VCR critique hypothesis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["critique_id", "candidate_id", "artifact_id", "check_id", "claim", "proposed_action", "status", "evidence_sha256"],
+  "properties": {
+    "critique_id": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "artifact_id": {"type": "string", "minLength": 1},
+    "check_id": {"type": "string", "minLength": 1},
+    "claim": {"type": "string", "minLength": 1},
+    "proposed_action": {"type": "string", "minLength": 1},
+    "status": {"const": "hypothesis"},
+    "evidence_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

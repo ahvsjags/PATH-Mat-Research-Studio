@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-18T10:39:31.923942+00:00",
+  "status": "frozen_smoke_fixtures_from_previously_observed_exploratory_candidates",
+  "purpose": "V0 file/structure validation and controlled artifact-corruption recovery smoke tests only",
+  "not_a_confirmatory_evaluation": true,
+  "source_files": {
+    "D:\\Downloads\\\u6750\u6599agent\\PATH-Mat_General_Order_Effect_V259\\release_candidate\\material_generation\\runs\\local_pathmat_double_perovskite_20261017_v2\\candidate_ledger.csv": {
+      "sha256": "074cbab2460196b1dfdcb7b2cbbc40b304c4bfedd3a71fc8b40c8375bdb48567",
+      "bytes": 29537
+    },
+    "D:\\Downloads\\\u6750\u6599agent\\PATH-Mat_General_Order_Effect_V259\\release_candidate\\material_generation\\runs\\chgnet_exact_structure_screen_20261017_v1\\candidate_chgnet_screen.csv": {
+      "sha256": "b30f658270860914bf87ce5e3e0a052b1e97042b8e2210ee6a56dfbe6fa23684",
+      "bytes": 19127
+    },
+    "D:\\Downloads\\\u6750\u6599agent\\PATH-Mat_General_Order_Effect_V260\\results\\RELAXED_GEOMETRY_CROSS_POTENTIAL_V260\\CROSS_POTENTIAL_COMMON_GEOMETRY_V260.csv": {
+      "sha256": "4ed2336eeeab94c1f26ac26f91c83c188d77b3c78aaf99d416be43dae4758b47",
+      "bytes": 15703
+    },
+    "D:\\Downloads\\\u6750\u6599agent\\PATH-Mat_General_Order_Effect_V259\\release_candidate\\material_generation\\runs\\local_pathmat_double_perovskite_20261017_v2\\design_summary.json": {
+      "sha256": "20448eb8ab6449dec72b0af25961022d269c5cf70c65e04f0f2d9f67de02e0d9",
+      "bytes": 49165
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "549d4a1a4d9398cecb7de182b410bc87f995d98df6a8476e9db09c1df982332a",
+      "formula": "Ba2ScNbO6",
+      "cif_path": "structures/549d4a1a4d9398cecb7de182b410bc87f995d98df6a8476e9db09c1df982332a_Ba2ScNbO6.cif",
+      "registered_source_path": "structures/549d4a1a4d9398cecb7de182b410bc87f995d98df6a8476e9db09c1df982332a_Ba2ScNbO6.cif",
+      "cif_sha256": "08b350a005836b348d779634d8514c8c16e6aacc6448767281443afb4bd93d32",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "chgnet_pass",
+      "chgnet_screen_pass": "True",
+      "chgnet_delta_meV_atom": "-0.1602",
+      "m3gnet_singlepoint_gate_le_50_meV": "True",
+      "chgnet_relaxed_gate_le_50_meV": "True",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    },
+    {
+      "candidate_id": "7a40a3f2bc3fd590d7fd0bda6218a66a7cce552340100a7fb9cb20103bb0333d",
+      "formula": "Ba2NbCrO6",
+      "cif_path": "structures/7a40a3f2bc3fd590d7fd0bda6218a66a7cce552340100a7fb9cb20103bb0333d_Ba2NbCrO6.cif",
+      "registered_source_path": "structures/7a40a3f2bc3fd590d7fd0bda6218a66a7cce552340100a7fb9cb20103bb0333d_Ba2NbCrO6.cif",
+      "cif_sha256": "d2ce74af8748c5dc2aac091551d72a7b7ec1027d9b937582995c8cd4dac211a6",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "chgnet_pass",
+      "chgnet_screen_pass": "True",
+      "chgnet_delta_meV_atom": "-0.0877",
+      "m3gnet_singlepoint_gate_le_50_meV": "True",
+      "chgnet_relaxed_gate_le_50_meV": "True",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    },
+    {
+      "candidate_id": "05e939312a502e0e09c20560e3dd65879c9952a870f63f24020aa11e85bb8311",
+      "formula": "Ca2TaCoO6",
+      "cif_path": "structures/05e939312a502e0e09c20560e3dd65879c9952a870f63f24020aa11e85bb8311_Ca2TaCoO6.cif",
+      "registered_source_path": "structures/05e939312a502e0e09c20560e3dd65879c9952a870f63f24020aa11e85bb8311_Ca2TaCoO6.cif",
+      "cif_sha256": "f9c8d2013dde3643b64e01390ceb9028ab95e021d7d75f08b9efea19f13a9b8e",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "cross_potential_disagreement",
+      "chgnet_screen_pass": "",
+      "chgnet_delta_meV_atom": "",
+      "m3gnet_singlepoint_gate_le_50_meV": "True",
+      "chgnet_relaxed_gate_le_50_meV": "False",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    },
+    {
+      "candidate_id": "f48480810b409cb5f7d29bec00111888e1f11b0e1701763c3df81c87d1d8b7d1",
+      "formula": "Ca2NbCoO6",
+      "cif_path": "structures/f48480810b409cb5f7d29bec00111888e1f11b0e1701763c3df81c87d1d8b7d1_Ca2NbCoO6.cif",
+      "registered_source_path": "structures/f48480810b409cb5f7d29bec00111888e1f11b0e1701763c3df81c87d1d8b7d1_Ca2NbCoO6.cif",
+      "cif_sha256": "9b2c21d16eedf32a938a9867bf5a3549c00132dd58b79b64813f7ac243ac7344",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "cross_potential_disagreement",
+      "chgnet_screen_pass": "",
+      "chgnet_delta_meV_atom": "",
+      "m3gnet_singlepoint_gate_le_50_meV": "True",
+      "chgnet_relaxed_gate_le_50_meV": "False",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    },
+    {
+      "candidate_id": "7d4dfeda7a836a4df680c5567f7afa858881dcf061ec921c3b6f61a0ae2cd2af",
+      "formula": "Ca2TaGaO6",
+      "cif_path": "structures/7d4dfeda7a836a4df680c5567f7afa858881dcf061ec921c3b6f61a0ae2cd2af_Ca2TaGaO6.cif",
+      "registered_source_path": "structures/7d4dfeda7a836a4df680c5567f7afa858881dcf061ec921c3b6f61a0ae2cd2af_Ca2TaGaO6.cif",
+      "cif_sha256": "e2cab472182fb5288679e041989ad518f6df03cbdcec029134a18617b005f99d",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "chgnet_fail_near_gate",
+      "chgnet_screen_pass": "False",
+      "chgnet_delta_meV_atom": "75.3241",
+      "m3gnet_singlepoint_gate_le_50_meV": "False",
+      "chgnet_relaxed_gate_le_50_meV": "False",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    },
+    {
+      "candidate_id": "4e227cc598657f1eab996ca7ef10ba5c3fa77edab11366a3ecae29ae9d586399",
+      "formula": "Ca2ScNbO6",
+      "cif_path": "structures/4e227cc598657f1eab996ca7ef10ba5c3fa77edab11366a3ecae29ae9d586399_Ca2ScNbO6.cif",
+      "registered_source_path": "structures/4e227cc598657f1eab996ca7ef10ba5c3fa77edab11366a3ecae29ae9d586399_Ca2ScNbO6.cif",
+      "cif_sha256": "b466c37af431738e952ecb8844ac62d09b8c5a5fe59983999ffdc89a591c0b35",
+      "formal_charge_sum": 0.0,
+      "screen_stratum": "chgnet_fail_high_delta",
+      "chgnet_screen_pass": "False",
+      "chgnet_delta_meV_atom": "131.8655",
+      "m3gnet_singlepoint_gate_le_50_meV": "False",
+      "chgnet_relaxed_gate_le_50_meV": "False",
+      "interpretation": "pre-existing exploratory screen label; not used as independent ground truth"
+    }
+  ],
+  "source_claim_boundary": "CHGNet values are previously observed screening outputs; cross-potential M3GNet values are single-point evaluations on CHGNet-relaxed geometries. Neither is DFT or experimental truth."
+}

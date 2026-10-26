@@ -1,0 +1,7 @@
+quantity,count_or_availability,interpretation
+Exact source-hash matched records,70636,Every primary record; unchanged cohort
+"Direct non-Starting, non-reference actions",715182,Unordered harmonized analysis
+Records with repeated local action IDs,40465,Local IDs cannot globally order the protocol
+Stored list differs from ascending local-ID order,62874,Not proof that the stored list is wrong
+Explicit global sentence index / synthesis timestamp,Absent,Physical chronology independently unverified
+Measured thermal controls,952,Chronological trace versus sorted identical temperatures; separate analysis

@@ -1,0 +1,12 @@
+schema_version: 1
+design_id: pathmat_integrated_agent_functional_demo
+design_task:
+  prototype: rocksalt_ordered_double_perovskite_A2BBpO6
+  a_site_coordination: XII
+  b_site_coordination: VI
+  oxygen_coordination: VI
+  a_site: {Ba: 2, Sr: 2}
+  b_site: {Sc: 3}
+  b_prime_site: {Nb: 5}
+  tolerance_factor_window: [0.80, 1.08]
+  octahedral_factor_window: [0.414, 0.732]

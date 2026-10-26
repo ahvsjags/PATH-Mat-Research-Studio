@@ -1,0 +1,434 @@
+{
+  "status": "post-inspection fixed-score sensitivities; no refits",
+  "protocol_sha256": "77fdb6287bf76e35cb40df9f34ba275b9e20775466a12496f309fb5e8fe8edcd",
+  "primary_input_sha256": "4cc3210fd0d782e26cfc75ecfb84dd1afb12c4d34c545174704b21f90a3b30e8",
+  "primary_partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+  "frozen_score_sha256": "5ef2d8f93514ecd2e92de0aec0ed4248de5f03798c741902eeadb722a4832966",
+  "primary_regimes": {
+    "row_weighted": {
+      "n": 5880,
+      "positive_rows": 1288,
+      "row_prevalence": 0.21904761904761905,
+      "weighted_prevalence": 0.21904761904761905,
+      "components": 2769,
+      "auprc": {
+        "frozen_B0": 0.2669631952989753,
+        "frozen_B1": 0.31243648913351163,
+        "richer_composition": 0.27649383555138535,
+        "richer_plus_count": 0.32355441790096284
+      },
+      "contrasts": [
+        {
+          "contrast": "frozen_B1 minus frozen_B0",
+          "delta_auprc": 0.04547329383453641,
+          "ci95": [
+            0.030698053253075917,
+            0.06379317120659918
+          ],
+          "family_adjusted_interval": [
+            0.024540945207182707,
+            0.07196105029931923
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        },
+        {
+          "contrast": "richer_plus_count minus richer_composition",
+          "delta_auprc": 0.04706058234957744,
+          "ci95": [
+            0.030222890263884434,
+            0.06788321180356516
+          ],
+          "family_adjusted_interval": [
+            0.023759871234461934,
+            0.07600091955668287
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        }
+      ]
+    },
+    "equal_doi_weight": {
+      "n": 5880,
+      "positive_rows": 1288,
+      "row_prevalence": 0.21904761904761905,
+      "weighted_prevalence": 0.22571195430436564,
+      "components": 2769,
+      "auprc": {
+        "frozen_B0": 0.2721375405849201,
+        "frozen_B1": 0.3204124644120982,
+        "richer_composition": 0.2836243082350335,
+        "richer_plus_count": 0.3283313349023762
+      },
+      "contrasts": [
+        {
+          "contrast": "frozen_B1 minus frozen_B0",
+          "delta_auprc": 0.04827492382717824,
+          "ci95": [
+            0.033607655696774937,
+            0.06453408790267179
+          ],
+          "family_adjusted_interval": [
+            0.028117707176731344,
+            0.07227797729949
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        },
+        {
+          "contrast": "richer_plus_count minus richer_composition",
+          "delta_auprc": 0.04470702666734305,
+          "ci95": [
+            0.0298208881978614,
+            0.06170736128192797
+          ],
+          "family_adjusted_interval": [
+            0.02323928353075155,
+            0.06791465477506933
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        }
+      ]
+    },
+    "equal_component_weight": {
+      "n": 5880,
+      "positive_rows": 1288,
+      "row_prevalence": 0.21904761904761905,
+      "weighted_prevalence": 0.23890942699299156,
+      "components": 2769,
+      "auprc": {
+        "frozen_B0": 0.2839415338114415,
+        "frozen_B1": 0.328581651133706,
+        "richer_composition": 0.2950241583295956,
+        "richer_plus_count": 0.33660395201272736
+      },
+      "contrasts": [
+        {
+          "contrast": "frozen_B1 minus frozen_B0",
+          "delta_auprc": 0.04464011732226408,
+          "ci95": [
+            0.03046134578198967,
+            0.061539567212805464
+          ],
+          "family_adjusted_interval": [
+            0.02369585365500655,
+            0.06815063259069938
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        },
+        {
+          "contrast": "richer_plus_count minus richer_composition",
+          "delta_auprc": 0.041579793683131916,
+          "ci95": [
+            0.026175631460246807,
+            0.05930387424105155
+          ],
+          "family_adjusted_interval": [
+            0.020357082479783226,
+            0.0673703914472813
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2769
+        }
+      ]
+    },
+    "canonical_target_unseen": {
+      "n": 5154,
+      "positive_rows": 1166,
+      "row_prevalence": 0.22623205277454406,
+      "weighted_prevalence": 0.22623205277454406,
+      "components": 2520,
+      "auprc": {
+        "frozen_B0": 0.27410418749111387,
+        "frozen_B1": 0.32037535347174567,
+        "richer_composition": 0.2803171319098236,
+        "richer_plus_count": 0.32877700647449676
+      },
+      "contrasts": [
+        {
+          "contrast": "frozen_B1 minus frozen_B0",
+          "delta_auprc": 0.046271165980631745,
+          "ci95": [
+            0.02969058088002925,
+            0.06478923782626883
+          ],
+          "family_adjusted_interval": [
+            0.022147066457673233,
+            0.07358053458383436
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2520
+        },
+        {
+          "contrast": "richer_plus_count minus richer_composition",
+          "delta_auprc": 0.04845987456467321,
+          "ci95": [
+            0.030121648030118096,
+            0.06913352362070485
+          ],
+          "family_adjusted_interval": [
+            0.02356054511481249,
+            0.07851162512908788
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2520
+        }
+      ]
+    },
+    "fully_parsable_target_and_precursors": {
+      "n": 5663,
+      "positive_rows": 1240,
+      "row_prevalence": 0.21896521278474307,
+      "weighted_prevalence": 0.21896521278474307,
+      "components": 2683,
+      "auprc": {
+        "frozen_B0": 0.26774086247404616,
+        "frozen_B1": 0.31168665030081755,
+        "richer_composition": 0.27648488540424826,
+        "richer_plus_count": 0.32116551476922983
+      },
+      "contrasts": [
+        {
+          "contrast": "frozen_B1 minus frozen_B0",
+          "delta_auprc": 0.04394578782677139,
+          "ci95": [
+            0.02847373171645668,
+            0.06284791714711607
+          ],
+          "family_adjusted_interval": [
+            0.02153786076831996,
+            0.0708353719099327
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2683
+        },
+        {
+          "contrast": "richer_plus_count minus richer_composition",
+          "delta_auprc": 0.04468062936498163,
+          "ci95": [
+            0.027147528631495173,
+            0.06372164841712641
+          ],
+          "family_adjusted_interval": [
+            0.020709346743208294,
+            0.07341762373537129
+          ],
+          "local_family_size": 10,
+          "valid_draws": 3000,
+          "components": 2683
+        }
+      ]
+    }
+  },
+  "audit": {
+    "exact_cohort_rows": 70636,
+    "source_sha256": "4cc3210fd0d782e26cfc75ecfb84dd1afb12c4d34c545174704b21f90a3b30e8",
+    "partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+    "unique_dois": 49902,
+    "multi_record_dois": 12972,
+    "multi_record_dois_with_uniform_label": 10947,
+    "multi_record_dois_with_uniform_list_length": 12972,
+    "multi_record_doi_rows": 33706,
+    "test_doi_sizes": {
+      "units": 4085,
+      "median_rows": 1.0,
+      "p95_rows": 3.0,
+      "largest_rows": 9
+    },
+    "test_component_sizes": {
+      "units": 2769,
+      "median_rows": 1.0,
+      "p95_rows": 6.0,
+      "largest_rows": 74
+    },
+    "test_target_parse_failed": 0,
+    "test_canonical_target_seen_in_fitting_partitions": 726,
+    "test_canonical_target_unseen_rows": 5154,
+    "test_fully_parsable_target_and_precursor_rows": 5663,
+    "interpretation": "Publication-level label/list-length sharing is dependence information, not new human adjudication. Canonical targets test representation-level equivalence, not chemical/laboratory OOD independence."
+  },
+  "external": {
+    "support": {
+      "all_external_n": 48315,
+      "unknown_canonical_target_rows": 11256,
+      "canonical_target_seen_primary_rows": 2507,
+      "canonical_unseen_n": 34552,
+      "canonical_unseen_positive": 7709,
+      "canonical_unseen_components": 8505,
+      "canonical_unseen_prevalence": 0.22311298911785135
+    },
+    "ranking_budget_comparisons": [
+      {
+        "model": "actions",
+        "review_fraction": 0.05,
+        "records_reviewed": 2416,
+        "composition_precision": 0.24420529801324503,
+        "model_precision": 0.2673841059602649,
+        "composition_recall": 0.055248618784530384,
+        "model_recall": 0.0604925554827231,
+        "delta_precision": 0.023178807947019875,
+        "extra_source_positive_per_100_reviewed": 2.3178807947019875,
+        "ci95_delta_precision": [
+          0.0007322241658128105,
+          0.043034728485621024
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.0059717213237160515,
+          0.051806711004557145
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      },
+      {
+        "model": "full",
+        "review_fraction": 0.05,
+        "records_reviewed": 2416,
+        "composition_precision": 0.24420529801324503,
+        "model_precision": 0.2677980132450331,
+        "composition_recall": 0.055248618784530384,
+        "model_recall": 0.06058619720947654,
+        "delta_precision": 0.023592715231788075,
+        "extra_source_positive_per_100_reviewed": 2.3592715231788075,
+        "ci95_delta_precision": [
+          0.0011743773625471584,
+          0.04435716179027217
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.005406622268999845,
+          0.05141186635242499
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      },
+      {
+        "model": "actions",
+        "review_fraction": 0.1,
+        "records_reviewed": 4832,
+        "composition_precision": 0.26469370860927155,
+        "model_precision": 0.2723509933774834,
+        "composition_recall": 0.11976776851765146,
+        "model_recall": 0.12323251240752879,
+        "delta_precision": 0.007657284768211869,
+        "extra_source_positive_per_100_reviewed": 0.7657284768211869,
+        "ci95_delta_precision": [
+          -0.006281716067469567,
+          0.022999667202735174
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.010408097578286648,
+          0.027493986471634393
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      },
+      {
+        "model": "full",
+        "review_fraction": 0.1,
+        "records_reviewed": 4832,
+        "composition_precision": 0.26469370860927155,
+        "model_precision": 0.2671771523178808,
+        "composition_recall": 0.11976776851765146,
+        "model_recall": 0.12089146923869276,
+        "delta_precision": 0.0024834437086092565,
+        "extra_source_positive_per_100_reviewed": 0.24834437086092565,
+        "ci95_delta_precision": [
+          -0.011784286960696447,
+          0.018035131618545048
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.016617667486662973,
+          0.02375339542862442
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      },
+      {
+        "model": "actions",
+        "review_fraction": 0.2,
+        "records_reviewed": 9663,
+        "composition_precision": 0.2519921349477388,
+        "model_precision": 0.258408361792404,
+        "composition_recall": 0.22801760464462964,
+        "model_recall": 0.23382339170334301,
+        "delta_precision": 0.006416226844665196,
+        "extra_source_positive_per_100_reviewed": 0.6416226844665196,
+        "ci95_delta_precision": [
+          -0.0015469499110732918,
+          0.01545458503506674
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.004991581618286146,
+          0.018373259804711377
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      },
+      {
+        "model": "full",
+        "review_fraction": 0.2,
+        "records_reviewed": 9663,
+        "composition_precision": 0.2519921349477388,
+        "model_precision": 0.25395839801303943,
+        "composition_recall": 0.22801760464462964,
+        "model_recall": 0.22979679745294504,
+        "delta_precision": 0.001966263065300622,
+        "extra_source_positive_per_100_reviewed": 0.1966263065300622,
+        "ci95_delta_precision": [
+          -0.006630691802324298,
+          0.010341942605831772
+        ],
+        "family_eight_interval_delta_precision": [
+          -0.009525723621991736,
+          0.014101882829400777
+        ],
+        "valid_draws": 3000,
+        "components": 11927
+      }
+    ],
+    "canonical_unseen_contrasts": [
+      {
+        "contrast": "actions minus composition",
+        "delta_auprc": 0.006209115793619491,
+        "ci95": [
+          0.002443073719717796,
+          0.009877064193371251
+        ],
+        "family_adjusted_interval": [
+          0.0010245878980239048,
+          0.011542434761531559
+        ],
+        "local_family_size": 8,
+        "valid_draws": 3000,
+        "components": 8505
+      },
+      {
+        "contrast": "full minus composition",
+        "delta_auprc": 0.0042166355204088235,
+        "ci95": [
+          3.576497030078704e-05,
+          0.008110753654248364
+        ],
+        "family_adjusted_interval": [
+          -0.0015558275753444369,
+          0.009790570030379885
+        ],
+        "local_family_size": 8,
+        "valid_draws": 3000,
+        "components": 8505
+      }
+    ],
+    "meaning": "Source-label retrieval at fixed review budgets; not physical purity, synthesis success, cost-benefit or prospective utility."
+  },
+  "elapsed_seconds": 37.02
+}

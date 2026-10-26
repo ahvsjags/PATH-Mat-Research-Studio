@@ -1,0 +1,11 @@
+regime,n,weighted_prevalence,contrast,delta_ap,ci95,adjusted
+row_weighted,5880,0.219048,frozen_B1 minus frozen_B0,+0.045473,+0.030698 to +0.063793,+0.024541 to +0.071961
+row_weighted,5880,0.219048,richer_plus_count minus richer_composition,+0.047061,+0.030223 to +0.067883,+0.023760 to +0.076001
+equal_doi_weight,5880,0.225712,frozen_B1 minus frozen_B0,+0.048275,+0.033608 to +0.064534,+0.028118 to +0.072278
+equal_doi_weight,5880,0.225712,richer_plus_count minus richer_composition,+0.044707,+0.029821 to +0.061707,+0.023239 to +0.067915
+equal_component_weight,5880,0.238909,frozen_B1 minus frozen_B0,+0.044640,+0.030461 to +0.061540,+0.023696 to +0.068151
+equal_component_weight,5880,0.238909,richer_plus_count minus richer_composition,+0.041580,+0.026176 to +0.059304,+0.020357 to +0.067370
+canonical_target_unseen,5154,0.226232,frozen_B1 minus frozen_B0,+0.046271,+0.029691 to +0.064789,+0.022147 to +0.073581
+canonical_target_unseen,5154,0.226232,richer_plus_count minus richer_composition,+0.048460,+0.030122 to +0.069134,+0.023561 to +0.078512
+fully_parsable_target_and_precursors,5663,0.218965,frozen_B1 minus frozen_B0,+0.043946,+0.028474 to +0.062848,+0.021538 to +0.070835
+fully_parsable_target_and_precursors,5663,0.218965,richer_plus_count minus richer_composition,+0.044681,+0.027148 to +0.063722,+0.020709 to +0.073418

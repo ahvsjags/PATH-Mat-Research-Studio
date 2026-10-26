@@ -1,0 +1,36 @@
+{
+  "status": "Repaired unique nonempty DOI/target identity; exploratory source-project diagnostic",
+  "paired_unique_publication_target_keys": 142,
+  "human_rows": 279,
+  "llm_rows": 286,
+  "human_unpaired_rows": 137,
+  "llm_unpaired_rows": 144,
+  "human_duplicate_key_rows": 112,
+  "llm_duplicate_key_rows": 113,
+  "binary_pair_n": 129,
+  "binary_agreement": 0.9922480620155039,
+  "binary_kappa": 0.9780275932549821,
+  "binary_confusion": [
+    {
+      "human": "impure",
+      "llm": "impure",
+      "n": 29
+    },
+    {
+      "human": "pure",
+      "llm": "impure",
+      "n": 1
+    },
+    {
+      "human": "pure",
+      "llm": "pure",
+      "n": 99
+    }
+  ],
+  "operation_count_mae": 0.014084507042253521,
+  "operation_count_spearman": 0.9972986411409888,
+  "pair_key_never_uses_outcome_or_action_count": true,
+  "independent_primary_gold_standard": false,
+  "scope": "Joint DOI/target identifies publication/target, not necessarily the same experimental protocol. No agreement CI treating these as independent primary gold labels is claimed.",
+  "protocol_sha256": "cfe93a7d0638502201dbe74c8a0703612f15f92d99ab22ba27efc5158fa82bce"
+}

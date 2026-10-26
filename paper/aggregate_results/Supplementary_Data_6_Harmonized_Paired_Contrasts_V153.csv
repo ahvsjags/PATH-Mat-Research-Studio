@@ -1,0 +1,7 @@
+cohort,contrast,delta_raw_auprc,ci95,bonferroni_six_ci,components
+primary,actions minus composition,+0.047204,+0.029752 to +0.065131,+0.022754 to +0.072063,2769
+primary,full minus composition,+0.046164,+0.028255 to +0.064651,+0.021911 to +0.071749,2769
+primary,full minus actions,-0.001040,-0.006518 to +0.004223,-0.008293 to +0.006494,2769
+external_solgel,actions minus composition,+0.005972,+0.002756 to +0.009066,+0.001856 to +0.010079,11927
+external_solgel,full minus composition,+0.003410,+0.000046 to +0.006549,-0.001080 to +0.007604,11927
+external_solgel,full minus actions,-0.002561,-0.003876 to -0.001317,-0.004341 to -0.000993,11927

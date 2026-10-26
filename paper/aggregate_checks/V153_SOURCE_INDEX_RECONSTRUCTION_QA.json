@@ -1,0 +1,14 @@
+{
+  "source_rows": 80806,
+  "selected_rows": 70636,
+  "model_relevant_field_mismatch_records": 0,
+  "mismatch_examples": [],
+  "original_snapshot_sha256": "4cc3210fd0d782e26cfc75ecfb84dd1afb12c4d34c545174704b21f90a3b30e8",
+  "original_partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+  "private_complete_snapshot_distributed": false,
+  "selector_role": "Explicit fixed cohort selection and split; does not independently regenerate historical cross-archive conflict filtering.",
+  "semantic_projection_sha256": "faa79fc808babd6ea6220d62ab8663c9d815a0f5eed9192d79b070e6988ed983",
+  "selector_sha256": "5f3ccaee799f53313ed5d729173a3517d43e6e1f86a35db32ed7f08400767b14",
+  "rebuilt_partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+  "status": "PASS every model-relevant field and frozen assignment"
+}

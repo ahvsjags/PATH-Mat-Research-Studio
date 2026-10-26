@@ -1,0 +1,9 @@
+population,count_type,sum,zero_rows,quantiles
+all,total,1072764,383,"0, 8, 12, 19, 37, 166"
+all,Starting,261033,2937,"0, 2, 3, 5, 10, 92"
+all,non_Starting_reference,96549,28227,"0, 0, 1, 2, 5, 31"
+all,direct,715182,1466,"0, 5, 8, 13, 26, 124"
+test,total,79757,17,"0, 7, 11, 17, 33, 116"
+test,Starting,20013,217,"0, 2, 3, 4, 8, 36"
+test,non_Starting_reference,7166,2514,"0, 0, 1, 2, 4, 17"
+test,direct,52578,135,"0, 4, 7, 11, 24, 74"

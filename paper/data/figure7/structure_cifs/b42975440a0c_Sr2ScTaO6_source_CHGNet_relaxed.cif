@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Sr2ScTaO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.73995065
+_cell_length_b   5.73995108
+_cell_length_c   5.78270872
+_cell_angle_alpha   120.15113274
+_cell_angle_beta   120.15113568
+_cell_angle_gamma   60.10333092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2ScTaO6
+_chemical_formula_sum   'Sr2 Sc1 Ta1 O6'
+_cell_volume   134.51577662
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  O  O0  1  0.25682688  0.25682762  0.18822153  1
+  O  O1  1  0.78166179  0.29342169  0.29481252  1
+  O  O2  1  0.29342183  0.78166188  0.29481251  1
+  O  O3  1  0.70657829  0.21833802  0.70518853  1
+  O  O4  1  0.21833799  0.70657821  0.70518850  1
+  O  O5  1  0.74317237  0.74317284  0.81177914  1
+  Sc  Sc6  1  -0.00000008  -0.00000035  -0.00000014  1
+  Sr  Sr7  1  0.75055426  0.75055376  0.25696904  1
+  Sr  Sr8  1  0.24944592  0.24944564  0.74303141  1
+  Ta  Ta9  1  0.49999996  0.49999991  0.50000036  1

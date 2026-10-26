@@ -1,0 +1,78 @@
+{
+  "exact_n": 956,
+  "positive": 821,
+  "score_file_sha256": "08c31b49b04d046b9b53f0e14a51910be5f5b9c7a33954e547d5fd292203aaa1",
+  "ledger_sha256": "f8b8aabb5b8718ad912075b9aa10373a5e81659b496348f14c926e432eb42dac",
+  "full_profile_available_rows": 956,
+  "unique_full_profiles": 247,
+  "rows_sharing_full_profile": 909,
+  "unique_target_strings": 953,
+  "component_count": 244,
+  "component_sizes": {
+    "median": 4.0,
+    "p95": 8.0,
+    "largest": 15
+  },
+  "furnace_counts": {
+    "BFT_box_b": 79,
+    "BFT_box_a": 53,
+    "box_b": 146,
+    "box_a": 270,
+    "box_c": 210,
+    "BFT_box_c": 74,
+    "box_d": 124
+  },
+  "nonempty_synthesis_field_counts": {
+    "heating_temperature": 956,
+    "heating_time": 956,
+    "furnace_name": 956,
+    "temperature_profile": 956,
+    "precursor_target_masses": 930,
+    "precursor_actual_masses": 930,
+    "mass_recovered_mg": 938,
+    "mass_for_xrd_mg": 954,
+    "met_target_mass": 954,
+    "target_compound": 956,
+    "elements_present": 956,
+    "metadata": 956
+  },
+  "synthesis_metadata_key_counts": {
+    "xrd_holder_index": 954
+  },
+  "physical_batch_identity_verified": false,
+  "batch_mapping_policy": "Furnace name and XRD holder index are not unique experiment batch identifiers; no unverified batch links are fabricated.",
+  "ap": {
+    "B0": 0.864292894181651,
+    "B1": 0.8684921141081637,
+    "B2": 0.8739376130566748
+  },
+  "draws": 10000,
+  "seed": 1532032,
+  "contrasts": [
+    {
+      "contrast": "B2 minus B0",
+      "delta_ap": 0.009644718875023828,
+      "ci95_components": [
+        -0.00014092172350889642,
+        0.020285412866942618
+      ],
+      "bonferroni_two": [
+        -0.0014092445630312256,
+        0.021844699922359136
+      ]
+    },
+    {
+      "contrast": "B2 minus B1",
+      "delta_ap": 0.005445498948511096,
+      "ci95_components": [
+        -0.003679568320285217,
+        0.014842155307944272
+      ],
+      "bonferroni_two": [
+        -0.00486525443341445,
+        0.016070623647215655
+      ]
+    }
+  ],
+  "interpretation": "Dependency links based on target strings and exact full stored measured profiles; they do not verify shared physical batch or causal order. Conditional on archived scores."
+}

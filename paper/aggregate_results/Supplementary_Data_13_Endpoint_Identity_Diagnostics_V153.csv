@@ -1,0 +1,16 @@
+quantity,value,interpretation
+Records / positives,956 / 821,Unchanged S8 subset
+Full measured profiles / distinct profiles,956 / 247,Original complete time/temperature arrays
+Records sharing profile,909,No common-batch inference
+Target/profile components / largest,244 / 15,Transitive links
+B2 minus B0,+0.009645,-0.000141 to +0.020285; adjusted -0.001409 to +0.021845
+B2 minus B1,+0.005445,-0.003680 to +0.014842; adjusted -0.004865 to +0.016071
+Same-index pairs checked,279,Original convention; not an outcome-based join
+Matching DOI / matching target,128 / 70,Not enough to validate original full-prefix pairing
+Joint identity matches,69,Original line-order agreement withdrawn
+Repaired unique DOI/target keys,142,No labels/counts used in join
+Human / LLM unpaired rows,137 / 144,"Includes duplicate, missing and unshared keys"
+Repaired binary pairs,129,Pure/Impure only
+Repaired binary agreement / κ,0.992248 / 0.978028,"Same-project diagnostic, not primary expert gold labels"
+Repaired operation-count MAE / ρ,0.014085 / 0.997299,Matched publication/target keys only
+Extra LLM source rows,7,"Excluded from original paired prefix, retained in source file"

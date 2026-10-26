@@ -1,0 +1,26 @@
+{
+  "status": "LOCKED_BEFORE_HOLDOUT_SCORING",
+  "protocol_path": "protocol/v280_failure_repair_confirmation_v1.json",
+  "protocol_sha256": "40792dd87b5f88d3345f108a4292bec1fc6ebee380befc267c47e438e1ea4665",
+  "freeze_script_sha256": "4a3c64f8f9bd4f0c046c15bb6bc7ebfdb9b17bde57d0163b8d15f18ea524277b",
+  "code_sha256": {
+    "analysis/scan_v280_prior_identity.py": "db13addbfcb9ace8c2eea09012369aa34ea95081193db75fe71557996ef65333",
+    "material_generation/analysis/prepare_v280_geometry.py": "59efb99d9964aff7e185472b85da04dd4e9e09f313ad1bc1c8bb0f855df8be8f",
+    "material_generation/analysis/freeze_v280_protocol.py": "4a3c64f8f9bd4f0c046c15bb6bc7ebfdb9b17bde57d0163b8d15f18ea524277b",
+    "material_generation/analysis/run_v280_confirmation.py": "d7956f2efb77826e2c1898cdd3b827e80c08ef67cb09da093d491ca3b5d238f5",
+    "material_generation/analysis/analyze_v280_confirmation.py": "8d5bd0204108b096ea5f44ec6d56986279c72a8123575b9326c837e94199243b",
+    "material_generation/analysis/audit_v280_confirmation.py": "c266ac371f5865dedb03470e71d8f42d7541b215243eee9172f00ceabf321939",
+    "material_generation/analysis/v280_locked_confirmation.sbatch": "ba27545f44b3590692e7f54f56e0827426954d667accb7255c6f2bcbb6534fbb",
+    "material_generation/analysis/v280_analyze_audit.sbatch": "0ac674241cbb1a86d8bc72506c9f0d44436b3333d2833daf707625379019fc30",
+    "material_generation/agent/ordered_double_perovskite_agent.py": "aa4c33ec9021e54a24223f3a5ac0b65f754010449aa7c6014ada54302c239cbf",
+    "material_generation/agent/pathmat_design_agent.py": "85dbbc9fd4ed6769eb71891d67804921028e16e9b8b06328461e850ee51bd6c5",
+    "material_generation/agent/ordering_catalog.py": "3225da18263bd8580a92868bd0db82bab18ecb1aaa2196b4deac192959f8c94e"
+  },
+  "identity_scan_sha256": "997dd6f1056887dc2ab38fe03f9cb85a9d97b123ab8a4c04fcbb13b1586853fe",
+  "config_sha256": "69f6e40c5ad4452131a64c9a448e165cebbcfdeb09edb1b5eeba3bc0d7315231",
+  "preflight_sha256": "ec55aa797bfb0c807ba0cb64cd45bd61aed2e19b1acd9787f784ef60b3370dbe",
+  "preflight_manifest_sha256": "089e59dcb4e11ececdea8d7c7dd17db0032c53b198fe749fc4fafddb7c7f448e",
+  "formula_count": 432,
+  "pair_cluster_count": 72,
+  "holdout_oracle_scoring_performed_at_lock": false
+}

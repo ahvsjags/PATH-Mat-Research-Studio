@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pathmat.local/schemas/vcr-verified-feedback-v1.json",
+  "title": "PATH-Mat VCR verified issue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["critique_id", "candidate_id", "artifact_id", "check_id", "status", "evidence_sha256", "verifier", "verified_at", "details"],
+  "properties": {
+    "critique_id": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "artifact_id": {"type": "string", "minLength": 1},
+    "check_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["confirmed", "rejected", "unresolved"]},
+    "evidence_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "verifier": {"type": "string", "minLength": 1},
+    "verified_at": {"type": "string", "format": "date-time"},
+    "details": {"type": "object"}
+  },
+  "allOf": [{
+    "if": {"properties": {"status": {"const": "confirmed"}}},
+    "then": {"properties": {"evidence_sha256": {"pattern": "^[a-f0-9]{64}$"}, "verifier": {"minLength": 1}}}
+  }]
+}

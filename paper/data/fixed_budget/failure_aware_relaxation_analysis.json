@@ -1,0 +1,3978 @@
+{
+  "status": "COMPLETED_V280_FRESH_B4B4_FAILURE_REPAIR_CONFIRMATION_ANALYSIS",
+  "analyzed_utc": "2026-10-25T09:24:03.449225+00:00",
+  "protocol_sha256": "40792dd87b5f88d3345f108a4292bec1fc6ebee380befc267c47e438e1ea4665",
+  "analysis_script_sha256": "8d5bd0204108b096ea5f44ec6d56986279c72a8123575b9326c837e94199243b",
+  "run_completed_sha256": "8756660c46817b7f3d92bb0e94e6bc8404109bf71decf1e9b2b6616fc09a8ec9",
+  "raw_calls_sha256": "8904f9094238e00a854adcfcc1c5f3f85a83c37afd453f1b643f90fcee92a2dd",
+  "raw_assignments_sha256": "02004017a63e074ccd1732e4301fb144890b4625c0993c51e91110482dd3d18f",
+  "raw_trace_sha256": "16760c4a43cf0b41faa7afdd3f6e0e7263baa05f7faec07a5ef2ef264f1d005f",
+  "formula_count": 432,
+  "pair_cluster_count": 72,
+  "a_site_count": 6,
+  "unique_oracle_calls": 1817,
+  "assignments_per_arm": {
+    "baseline_static_0123": 1728,
+    "candidate_failure_triggered_lbfgs": 1728
+  },
+  "primary_endpoint": "candidate minus baseline unique accepted, serialized-force-passing relaxed basins per formula",
+  "mean_delta_candidate_minus_baseline_per_formula": 0.03935185185185185,
+  "pair_cluster_bootstrap_95_ci_primary": [
+    0.018518518518518517,
+    0.0625
+  ],
+  "two_way_a_site_x_pair_cluster_bootstrap_95_ci_primary": [
+    0.009259259259259259,
+    0.08101851851851852
+  ],
+  "formula_iid_bootstrap_95_ci_secondary": [
+    0.023148148148148147,
+    0.05787037037037037
+  ],
+  "bootstrap_draws": 50000,
+  "bootstrap_seeds": {
+    "formula_iid": 28031,
+    "pair_cluster": 28032,
+    "two_way": 28033
+  },
+  "two_way_bootstrap_empty_weight_draws": 0,
+  "paired_formula_results": {
+    "positive": 17,
+    "negative": 0,
+    "tied": 415
+  },
+  "candidate_fourth_slot_methods": {
+    "FIRE_catalog_fallback_class3": 343,
+    "LBFGS_force_only_continuation": 89
+  },
+  "mean_unique_accepted_basins_per_formula": {
+    "baseline_static_0123": 3.638888888888889,
+    "candidate_failure_triggered_lbfgs": 3.678240740740741
+  },
+  "class_0_to_3_fire_call_summary": {
+    "0": {
+      "calls": 432,
+      "accepted": 400,
+      "v0_pass_force_only_failure": 32,
+      "runtime_or_pipeline_failure": 0
+    },
+    "1": {
+      "calls": 432,
+      "accepted": 393,
+      "v0_pass_force_only_failure": 39,
+      "runtime_or_pipeline_failure": 0
+    },
+    "2": {
+      "calls": 432,
+      "accepted": 394,
+      "v0_pass_force_only_failure": 38,
+      "runtime_or_pipeline_failure": 0
+    },
+    "3": {
+      "calls": 432,
+      "accepted": 385,
+      "v0_pass_force_only_failure": 47,
+      "runtime_or_pipeline_failure": 0
+    }
+  },
+  "repair_summary": {
+    "triggered_formula_count": 89,
+    "repair_calls_accepted": 89,
+    "repair_calls_failed": 0,
+    "candidate_fourth_slot_lbfgs_count": 89,
+    "candidate_fourth_slot_class3_fallback_count": 343,
+    "repair_recovery_fraction": 1.0
+  },
+  "dual_primary_interval_lower_bounds_above_zero": true,
+  "per_formula": [
+    {
+      "formula": "Ba2CeFeO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2CeNbO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2CeOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ba2CePdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2CeReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2CeRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FeIrO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FeOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FePtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FeRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FeRuO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2FeSnO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfFeO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfNbO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfPdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2HfTaO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2IrOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2IrPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2IrRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2MoOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2MoWO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbMoO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbSnO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2NbWO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2OsPdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2OsPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2OsRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2OsRuO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2OsWO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2PdPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2PdRuO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2PtRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ReMoO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ReOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2RePdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ba2RePtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ba2ReSnO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ReWO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2RuRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2SnOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2SnPdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2SnRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TaOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TaPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TaReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TaSnO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TaWO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThFeO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThNbO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThPdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ThTaO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TiFeO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TiOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2TiPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2VOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2VPtO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ba2ZrFeO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrNbO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrOsO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrPdO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrReO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrRhO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ba2ZrTaO6",
+      "a_site": "Ba",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2CeFeO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2CeNbO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2CeOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2CePdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2CeReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2CeRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2FeIrO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2FeOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2FePtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2FeRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2FeRuO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2FeSnO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2HfFeO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2HfNbO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2HfOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2HfPdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2HfReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2HfRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2HfTaO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2IrOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2IrPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2IrRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2MoOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2MoWO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2NbMoO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2NbOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2NbPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2NbReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2NbSnO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2NbWO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2OsPdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2OsPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2OsRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2OsRuO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2OsWO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2PdPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2PdRuO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2PtRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ReMoO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ReOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2RePdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2RePtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ReSnO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ReWO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2RuRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2SnOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2SnPdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2SnRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2TaOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2TaPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2TaReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2TaSnO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2TaWO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ThFeO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ThNbO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ThOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ThPdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ThReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ThRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ThTaO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2TiFeO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2TiOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2TiPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2VOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2VPtO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ZrFeO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ZrNbO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ZrOsO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ZrPdO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ZrReO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Ca2ZrRhO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Ca2ZrTaO6",
+      "a_site": "Ca",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "CeEu2FeO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeEu2NbO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeEu2OsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeEu2PdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeEu2ReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeEu2RhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "CeFe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeNb(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CePd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeSm2FeO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "CeSm2NbO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeSm2OsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeSm2PdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeSm2ReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "CeSm2RhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2FeIrO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2FeOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2FePtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2FeRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2FeRuO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2FeSnO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2HfFeO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2HfNbO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2HfOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2HfPdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2HfReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2HfRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2HfTaO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2IrOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2IrPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2IrRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2MoOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2MoWO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2NbMoO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2NbOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2NbPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2NbReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2NbSnO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2NbWO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2OsPdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2OsPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2OsRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2OsRuO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2OsWO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2PdPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2PdRuO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2PtRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ReMoO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2ReOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2RePdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2RePtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2ReSnO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ReWO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2RuRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2SnOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2SnPdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2SnRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TaOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TaPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TaReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TaSnO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TaWO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ThFeO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ThNbO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ThOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2ThPdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ThReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2ThRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2ThTaO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Eu2TiFeO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TiOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2TiPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2VOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2VPtO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrFeO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrNbO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrOsO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrPdO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrReO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrRhO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Eu2ZrTaO6",
+      "a_site": "Eu",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FeIr(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FeOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FePt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FeRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FeRu(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "FeSn(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "HfFe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "HfNb(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "HfOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "HfPd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "HfRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "HfRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "HfTa(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "IrOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "IrPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "IrRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "MoOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "MoPb2WO6",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbMo(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbPb2WO6",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "NbSn(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "OsPb2WO6",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "OsPd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "OsPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "OsRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "OsRu(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "PdPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "PdRu(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "PtRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ReMo(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ReOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "RePb2WO6",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "RePd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "RePt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ReSn(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "RuRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FeIrO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FeOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FePtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FeRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FeRuO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2FeSnO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfFeO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfNbO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2HfOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfPdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2HfTaO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2IrOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2IrPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2IrRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2MoOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2MoWO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2NbMoO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2NbOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2NbPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2NbReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2NbSnO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2NbWO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2OsPdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2OsPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2OsRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2OsRuO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2OsWO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2PdPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2PdRuO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2PtRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ReMoO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ReOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2RePdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2RePtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ReSnO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2ReWO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2RuRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2SnOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2SnPdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2SnRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TaOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TaPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TaReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TaSnO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2TaWO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ThFeO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ThNbO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ThOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2ThPdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ThReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2ThRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2ThTaO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sm2TiFeO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TiOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2TiPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2VOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2VPtO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrFeO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrNbO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrOsO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrPdO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrReO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrRhO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sm2ZrTaO6",
+      "a_site": "Sm",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "SnOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "SnPd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "SnRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2CeFeO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Fe::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2CeNbO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2CeOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Os::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2CePdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2CeReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2CeRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ce-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2FeIrO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Ir::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2FeOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2FePtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2FeRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2FeRuO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2FeSnO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2HfFeO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Hf::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2HfNbO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2HfOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2HfPdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2HfReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2HfRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2HfTaO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Hf-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2IrOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ir-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2IrPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ir-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2IrRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ir-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2MoOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Mo-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2MoWO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Mo-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbMoO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Mo-Nb::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Os::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbSnO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2NbWO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2OsPdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Pd::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2OsPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2OsRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2OsRuO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2OsWO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-W::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2PdPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Pt::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2PdRuO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2PtRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pt-Rh::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ReMoO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Mo-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ReOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Re::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2RePdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2RePtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pt-Re::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2ReSnO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Re-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ReWO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Re-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2RuRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Rh-Ru::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2SnOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2SnPdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2SnRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Rh-Sn::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TaOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TaPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TaReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TaSnO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TaWO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ThFeO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ThNbO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2ThOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2ThPdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ThReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ThRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ThTaO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 2,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2TiFeO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2TiOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 0,
+      "candidate_unique_accepted_basins": 1,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2TiPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2VOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2VPtO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrFeO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrNbO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrOsO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 2,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 1,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "Sr2ZrPdO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrReO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrRhO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "Sr2ZrTaO6",
+      "a_site": "Sr",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TaOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TaPb2WO6",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ta-W::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TaPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pt-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TaRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Re-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TaSn(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Sn-Ta::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ThFe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ThNb(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Th::ox4-4",
+      "baseline_unique_accepted_basins": 1,
+      "candidate_unique_accepted_basins": 1,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "ThOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "ThPd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "ThRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Re-Th::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ThRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Rh-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ThTa(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ta-Th::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "TiFe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "TiOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "TiPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pt-Ti::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "VOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "VPt(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pt-V::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrFe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Fe-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrNb(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Nb-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrOs(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Os-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    },
+    {
+      "formula": "ZrPd(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Pd-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrRe(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Re-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrRh(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Rh-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 4,
+      "candidate_unique_accepted_basins": 4,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "FIRE_catalog_fallback_class3"
+    },
+    {
+      "formula": "ZrTa(PbO3)2",
+      "a_site": "Pb",
+      "pair_cluster": "A2_B4_B4::Ta-Zr::ox4-4",
+      "baseline_unique_accepted_basins": 3,
+      "candidate_unique_accepted_basins": 3,
+      "delta_candidate_minus_baseline": 0,
+      "candidate_fourth_call_method": "LBFGS_force_only_continuation"
+    }
+  ],
+  "interpretation_scope": "Matched-budget local CHGNet relaxation yield on the locked fresh A2+ B4+ B4+ double-perovskite grid; not thermodynamic stability, synthesis feasibility, or experimental yield."
+}

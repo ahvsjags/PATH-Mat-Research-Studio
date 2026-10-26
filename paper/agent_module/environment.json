@@ -1,0 +1,15 @@
+{
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "2.3.5",
+    "pymatgen": "2026.5.4",
+    "PyYAML": "6.0.3",
+    "pytest": "9.0.3",
+    "joblib": "1.5.3",
+    "scikit-learn": "1.8.0",
+    "ase": "not installed in integration-test interpreter",
+    "torch": "2.11.0+cu128",
+    "chgnet": "not installed in integration-test interpreter"
+  },
+  "numerical_confirmation_environment": "See frozen 0.4.2 confirmation protocol; no new numerical relaxation was run for integration tests."
+}

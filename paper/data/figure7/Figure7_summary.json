@@ -1,0 +1,24 @@
+{
+  "design_proposals": 72,
+  "geometry_retained": 45,
+  "cod_distinct": 43,
+  "all_three_energy_screen": 28,
+  "joint_structure_chgnet_screen": 24,
+  "search_compositions": 432,
+  "baseline_basins": 1572,
+  "candidate_basins": 1589,
+  "continuation_count": 89,
+  "fallback_count": 343,
+  "gains": 17,
+  "ties": 415,
+  "losses": 0,
+  "mean_delta": 0.03935185185185185,
+  "pair_ci": [
+    0.018518518518518517,
+    0.0625
+  ],
+  "two_way_ci": [
+    0.009259259259259259,
+    0.08101851851851852
+  ]
+}

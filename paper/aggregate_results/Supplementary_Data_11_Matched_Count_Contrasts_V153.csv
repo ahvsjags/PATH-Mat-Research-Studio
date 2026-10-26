@@ -1,0 +1,25 @@
+classifier,scale,contrast,delta_ap,ci95,adjusted
+logistic,raw,total_count minus composition,+0.050725,+0.030840 to +0.072453,+0.019383 to +0.083871
+logistic,raw,direct_count minus composition,+0.047477,+0.028636 to +0.068452,+0.016747 to +0.079764
+logistic,raw,excluded_count minus composition,+0.024527,+0.010032 to +0.039199,+0.000797 to +0.048353
+logistic,raw,direct_count minus total_count,-0.003248,-0.009450 to +0.003336,-0.013442 to +0.006937
+logistic,raw,direct_taxonomy minus direct_count,+0.000878,-0.006074 to +0.008131,-0.010042 to +0.011957
+logistic,raw,native_conditions minus word_presence,+0.001803,-0.006801 to +0.010465,-0.012004 to +0.015244
+logistic,calibrated,total_count minus composition,+0.047061,+0.030779 to +0.066702,+0.021844 to +0.077401
+logistic,calibrated,direct_count minus composition,+0.040270,+0.025343 to +0.057058,+0.017153 to +0.067015
+logistic,calibrated,excluded_count minus composition,+0.020410,+0.010054 to +0.031267,+0.003836 to +0.037085
+logistic,calibrated,direct_count minus total_count,-0.006790,-0.014338 to +0.000124,-0.019298 to +0.003991
+logistic,calibrated,direct_taxonomy minus direct_count,+0.006139,-0.001454 to +0.013848,-0.005837 to +0.017910
+logistic,calibrated,native_conditions minus word_presence,+0.006408,-0.002227 to +0.015085,-0.007237 to +0.019634
+extra_trees,raw,total_count minus composition,+0.038858,+0.018499 to +0.060082,+0.007983 to +0.070565
+extra_trees,raw,direct_count minus composition,+0.035019,+0.015355 to +0.054553,+0.003707 to +0.064995
+extra_trees,raw,excluded_count minus composition,+0.015879,+0.000881 to +0.031701,-0.006828 to +0.039884
+extra_trees,raw,direct_count minus total_count,-0.003839,-0.017929 to +0.008825,-0.027602 to +0.015798
+extra_trees,raw,direct_taxonomy minus direct_count,+0.013296,+0.000590 to +0.026286,-0.006279 to +0.033479
+extra_trees,raw,native_conditions minus word_presence,+0.014171,+0.002343 to +0.026117,-0.003926 to +0.032620
+extra_trees,calibrated,total_count minus composition,+0.029857,+0.012326 to +0.047563,+0.001593 to +0.057268
+extra_trees,calibrated,direct_count minus composition,+0.028827,+0.011307 to +0.046164,+0.001276 to +0.054362
+extra_trees,calibrated,excluded_count minus composition,+0.012244,-0.000777 to +0.025983,-0.007978 to +0.033137
+extra_trees,calibrated,direct_count minus total_count,-0.001030,-0.014315 to +0.011796,-0.023479 to +0.018791
+extra_trees,calibrated,direct_taxonomy minus direct_count,+0.012280,+0.000684 to +0.024644,-0.005272 to +0.031177
+extra_trees,calibrated,native_conditions minus word_presence,+0.013298,+0.001690 to +0.025062,-0.005134 to +0.031331

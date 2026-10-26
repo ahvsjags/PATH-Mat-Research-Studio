@@ -1,0 +1,144 @@
+{
+  "source_n": 70636,
+  "direct_count_definition": "Non-Starting and false/empty ref_act",
+  "category_order": [
+    "total",
+    "Starting",
+    "non_Starting_reference",
+    "direct"
+  ],
+  "mutually_exclusive_counts_sum_verified": true,
+  "counts": {
+    "all": {
+      "total": {
+        "sum": 1072764,
+        "zero_rows": 383,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          8.0,
+          12.0,
+          19.0,
+          37.0,
+          166.0
+        ]
+      },
+      "Starting": {
+        "sum": 261033,
+        "zero_rows": 2937,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          2.0,
+          3.0,
+          5.0,
+          10.0,
+          92.0
+        ]
+      },
+      "non_Starting_reference": {
+        "sum": 96549,
+        "zero_rows": 28227,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          5.0,
+          31.0
+        ]
+      },
+      "direct": {
+        "sum": 715182,
+        "zero_rows": 1466,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          5.0,
+          8.0,
+          13.0,
+          26.0,
+          124.0
+        ]
+      }
+    },
+    "test": {
+      "total": {
+        "sum": 79757,
+        "zero_rows": 17,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          7.0,
+          11.0,
+          17.0,
+          33.0,
+          116.0
+        ]
+      },
+      "Starting": {
+        "sum": 20013,
+        "zero_rows": 217,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          2.0,
+          3.0,
+          4.0,
+          8.0,
+          36.0
+        ]
+      },
+      "non_Starting_reference": {
+        "sum": 7166,
+        "zero_rows": 2514,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          4.0,
+          17.0
+        ]
+      },
+      "direct": {
+        "sum": 52578,
+        "zero_rows": 135,
+        "quantiles_0_25_50_75_95_100": [
+          0.0,
+          4.0,
+          7.0,
+          11.0,
+          24.0,
+          74.0
+        ]
+      }
+    }
+  },
+  "records_with_non_starting_reference": 42409,
+  "correlations_pearson": [
+    [
+      1.0,
+      0.5497874440931735,
+      0.6907273363860739,
+      0.9481057801609747
+    ],
+    [
+      0.5497874440931735,
+      1.0,
+      0.16072029266785545,
+      0.287095466454958
+    ],
+    [
+      0.6907273363860739,
+      0.16072029266785542,
+      1.0,
+      0.6272828090320142
+    ],
+    [
+      0.9481057801609747,
+      0.28709546645495804,
+      0.6272828090320142,
+      1.0
+    ]
+  ],
+  "earlier_richer_calibrated_max_abs_diff": {
+    "composition": 0.0,
+    "total_count": 0.0
+  }
+}

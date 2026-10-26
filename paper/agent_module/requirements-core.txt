@@ -1,0 +1,4 @@
+numpy==2.3.5
+pymatgen==2026.5.4
+PyYAML==6.0.3
+pytest==9.0.3

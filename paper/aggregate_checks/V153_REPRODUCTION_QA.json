@@ -1,0 +1,29 @@
+{
+  "status": "PASS bounded public-source reconstruction and logistic full-refit reproduction",
+  "independent_scientific_replication": false,
+  "complete_internal_raw_data_distributed": false,
+  "compared_score_vectors": {
+    "logistic__composition__raw": 0.0,
+    "logistic__composition__calibrated": 0.0,
+    "logistic__total_count__raw": 0.0,
+    "logistic__total_count__calibrated": 0.0,
+    "logistic__direct_count__raw": 0.0,
+    "logistic__direct_count__calibrated": 0.0,
+    "logistic__excluded_count__raw": 0.0,
+    "logistic__excluded_count__calibrated": 0.0,
+    "logistic__direct_taxonomy__raw": 0.0,
+    "logistic__direct_taxonomy__calibrated": 0.0,
+    "logistic__word_presence__raw": 0.0,
+    "logistic__word_presence__calibrated": 0.0,
+    "logistic__native_conditions__raw": 0.0,
+    "logistic__native_conditions__calibrated": 0.0
+  },
+  "scope": "Clean directory, public Lee export plus explicit selection input; all seven logistic branches refit, trees are not re-refit by this check.",
+  "independently_recomputed_metric_vectors": 28,
+  "selector_sha256": "5f3ccaee799f53313ed5d729173a3517d43e6e1f86a35db32ed7f08400767b14",
+  "frozen_review_sha256": {
+    "Reviewer1_FROZEN.md": "95b823052e71fa3d2c56ce0f439299155e5aeb52c128d1a579938de6db1cbc25",
+    "Reviewer2_FROZEN.md": "9487321e88b37cb35f2bbcf5d1b4beb927030d9e1ddac5f4c4d87812e9e17c24",
+    "Reviewer3_FROZEN.md": "2270e95d1b466acf28fc229ad9d2d67bbac5a93ccc0307bdc4f461635d0bd5df"
+  }
+}

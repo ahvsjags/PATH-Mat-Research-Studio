@@ -1,0 +1,116 @@
+{
+  "status": "Saved-estimator raw extraction; frozen calibrated values identity-checked; NOT a same-version legacy refit",
+  "source_sha256": "4cc3210fd0d782e26cfc75ecfb84dd1afb12c4d34c545174704b21f90a3b30e8",
+  "partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+  "test_n": 5880,
+  "test_components": 2769,
+  "metrics": {
+    "B0_composition": {
+      "raw": {
+        "ap": 0.27556736652249597,
+        "auroc": 0.5806187036055144,
+        "distinct_scores": 4159
+      },
+      "calibrated": {
+        "ap": 0.2669631952989753,
+        "auroc": 0.5804194474051552,
+        "distinct_scores": 40
+      }
+    },
+    "B1_process_bag": {
+      "raw": {
+        "ap": 0.32763755384810245,
+        "auroc": 0.6347902678436168,
+        "distinct_scores": 5320
+      },
+      "calibrated": {
+        "ap": 0.31243648913351163,
+        "auroc": 0.6343385810050425,
+        "distinct_scores": 38
+      }
+    },
+    "B2_ordered_process": {
+      "raw": {
+        "ap": 0.33261537291006626,
+        "auroc": 0.6443994551691302,
+        "distinct_scores": 5347
+      },
+      "calibrated": {
+        "ap": 0.3183302812789369,
+        "auroc": 0.6436212823544053,
+        "distinct_scores": 48
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "contrast": "B1_process_bag minus B0_composition",
+      "scale": "raw",
+      "delta_ap": 0.052070187325606476,
+      "ci95": [
+        0.03212180144371631,
+        0.07389595990148101
+      ],
+      "bonferroni_four": [
+        0.026984217450477826,
+        0.07971690897534023
+      ]
+    },
+    {
+      "contrast": "B2_ordered_process minus B1_process_bag",
+      "scale": "raw",
+      "delta_ap": 0.004977819061963817,
+      "ci95": [
+        -0.001561218553479475,
+        0.011452090906383503
+      ],
+      "bonferroni_four": [
+        -0.003487871477653864,
+        0.013258499033877083
+      ]
+    },
+    {
+      "contrast": "B1_process_bag minus B0_composition",
+      "scale": "calibrated",
+      "delta_ap": 0.045473293834536355,
+      "ci95": [
+        0.030332958577938714,
+        0.06326937628781558
+      ],
+      "bonferroni_four": [
+        0.02563382502755495,
+        0.06896804628093621
+      ]
+    },
+    {
+      "contrast": "B2_ordered_process minus B1_process_bag",
+      "scale": "calibrated",
+      "delta_ap": 0.005893792145425292,
+      "ci95": [
+        -7.393405945359117e-05,
+        0.012503651231720692
+      ],
+      "bonferroni_four": [
+        -0.0017716253567115104,
+        0.014504325865301412
+      ]
+    }
+  ],
+  "model_audit": {
+    "B0_composition": {
+      "model_sha256": "4a1ccd2ae6f6a51cf743a41da5b79ff7cec6f8688dbc47e001ab4dbfdd59d19e",
+      "max_abs_calibrated_difference_from_frozen": 1.27675647831893e-15
+    },
+    "B1_process_bag": {
+      "model_sha256": "364c85b24bc0c4d6d3a5651969bfc6bf3e0ad59e4af4a1fc905e5e3a9ae0ad3e",
+      "max_abs_calibrated_difference_from_frozen": 0.0
+    },
+    "B2_ordered_process": {
+      "model_sha256": "f401a42cdfe20e71d3a879d961312934b13edcd82848071a7d2817ad36b1e0f6",
+      "max_abs_calibrated_difference_from_frozen": 1.0269562977782698e-14
+    }
+  },
+  "draws": 10000,
+  "seed": 1532033,
+  "environment": "Current scikit-learn 1.8.0 loads trusted original 1.6.1 objects. Exact calibrated identity checks passed."
+}

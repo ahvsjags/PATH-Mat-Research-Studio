@@ -1,0 +1,27 @@
+{
+  "exact_cohort_rows": 70636,
+  "source_sha256": "4cc3210fd0d782e26cfc75ecfb84dd1afb12c4d34c545174704b21f90a3b30e8",
+  "partition_sha256": "5e5fc8c40ed530803dfdbff4881837556bbc0b242c787b7e780ce6fe4f17a7d7",
+  "unique_dois": 49902,
+  "multi_record_dois": 12972,
+  "multi_record_dois_with_uniform_label": 10947,
+  "multi_record_dois_with_uniform_list_length": 12972,
+  "multi_record_doi_rows": 33706,
+  "test_doi_sizes": {
+    "units": 4085,
+    "median_rows": 1.0,
+    "p95_rows": 3.0,
+    "largest_rows": 9
+  },
+  "test_component_sizes": {
+    "units": 2769,
+    "median_rows": 1.0,
+    "p95_rows": 6.0,
+    "largest_rows": 74
+  },
+  "test_target_parse_failed": 0,
+  "test_canonical_target_seen_in_fitting_partitions": 726,
+  "test_canonical_target_unseen_rows": 5154,
+  "test_fully_parsable_target_and_precursor_rows": 5663,
+  "interpretation": "Publication-level label/list-length sharing is dependence information, not new human adjudication. Canonical targets test representation-level equivalence, not chemical/laboratory OOD independence."
+}

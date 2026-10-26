@@ -1,0 +1,5 @@
+scale,contrast,delta_ap,ci95,adjusted
+raw,B1_process_bag minus B0_composition,+0.052070,+0.032122 to +0.073896,+0.026984 to +0.079717
+raw,B2_ordered_process minus B1_process_bag,+0.004978,-0.001561 to +0.011452,-0.003488 to +0.013258
+calibrated,B1_process_bag minus B0_composition,+0.045473,+0.030333 to +0.063269,+0.025634 to +0.068968
+calibrated,B2_ordered_process minus B1_process_bag,+0.005894,-0.000074 to +0.012504,-0.001772 to +0.014504

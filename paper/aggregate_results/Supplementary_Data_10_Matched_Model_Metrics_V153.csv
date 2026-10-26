@@ -1,0 +1,15 @@
+classifier,representation,features,raw_ap,calibrated_ap,raw_auc,distinct_scores
+logistic,composition,429,0.288441,0.276494,0.595292,5024 / 34
+extra_trees,composition,429,0.308717,0.299142,0.621113,5009 / 53
+logistic,total_count,430,0.339165,0.323554,0.638760,5783 / 48
+extra_trees,total_count,430,0.347575,0.328999,0.656520,5768 / 53
+logistic,direct_count,430,0.335917,0.316764,0.633518,5755 / 56
+extra_trees,direct_count,430,0.343736,0.327969,0.651130,5744 / 47
+logistic,excluded_count,430,0.312967,0.296904,0.624916,5705 / 41
+extra_trees,excluded_count,430,0.324596,0.311387,0.633495,5691 / 58
+logistic,direct_taxonomy,434,0.336795,0.322903,0.643217,5833 / 59
+extra_trees,direct_taxonomy,434,0.357032,0.340249,0.662389,5813 / 38
+logistic,word_presence,433,0.341703,0.324978,0.642098,5856 / 43
+extra_trees,word_presence,433,0.348794,0.333848,0.658785,5839 / 41
+logistic,native_conditions,444,0.343506,0.331387,0.651394,5857 / 35
+extra_trees,native_conditions,444,0.362965,0.347145,0.671132,5829 / 49
